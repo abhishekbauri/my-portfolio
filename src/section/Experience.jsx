@@ -1,10 +1,17 @@
 import Grid from '@mui/material/Grid';
+import {motion} from 'framer-motion';
 import { companyUrl, kreditBeeExp } from '../constant/constant';
 
 import './Experience.css';
 const Experience = () => {
   return (
-    <section id='exp-section'>
+    <motion.section 
+        initial={{ opacity: 0, y: 50}} 
+        whileInView={{ opacity: 1, y:0}} 
+        transition={{ duration: 1.2, ease: "linear" }}
+        viewport={{ once: true }}
+        id='exp-section'
+    >
         <h1 className='exp-heading'>Experience</h1>
         <Grid container className='exp-container'>
             <Grid item xs={10} md={6} className='company-photo'>
@@ -19,7 +26,7 @@ const Experience = () => {
             </Grid>
         </Grid>
 
-    </section>
+    </motion.section>
     )
 }
 

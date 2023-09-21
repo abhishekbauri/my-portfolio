@@ -1,4 +1,5 @@
 import Grid from "@mui/material/Grid";
+import {motion} from 'framer-motion';
 import Skills from '../component/Skills'
 import { aboutDesc, aboutPhotoUrl } from "../constant/constant";
 
@@ -6,7 +7,13 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section id="about-section">
+    <motion.section 
+      initial={{ opacity: 0, y:50}} 
+      whileInView={{ opacity: 1, y:0}} 
+      transition={{ duration: 2, ease: "linear" }} 
+      viewport={{ once: true }} 
+      id="about-section"
+    >
       <Grid
         container
         rowSpacing={1}
@@ -27,7 +34,7 @@ const About = () => {
       </Grid>
 
       <Skills />
-    </section>
+    </motion.section>
   );
 };
 
