@@ -1,0 +1,52 @@
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { CardActionArea } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { projectDetails } from '../constant/constant';
+
+import './Project.css';
+
+const Project = () => {
+  return (
+    <section id='project-section'>
+        <div className='project-heading'>
+            <h1>Projects</h1>
+        </div>
+        <div className='project-container'>
+            {projectDetails.map( (item) => (
+                <Card sx={{ maxWidth: 300 , margin:3}} key={item.id} >
+                    <CardActionArea href={item.liveUrl} target='_blank'>
+                        <CardMedia
+                        component="img"
+                        height="140"
+                        image={item.imageUrl}
+                        alt="green iguana"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div" sx={{textAlign: 'center', textOverflow: 'ellipsis', overflow:'hidden', whiteSpace:'nowrap', height: 30}}>
+                                {item.title}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+
+                    <Stack direction="row"  sx={{justifyContent: 'space-around', marginBottom: 2, marginTop:2}}>
+                        <Button variant="outlined" startIcon={<GitHubIcon />} href={item.githubUrl} target='_blank'>
+                            Github
+                        </Button>
+                        <Button variant="contained" endIcon={<OpenInNewIcon />} href={item.liveUrl} target='_blank'>
+                            Live
+                        </Button>
+                    </Stack>
+                </Card>
+            ))}
+        </div>
+    </section>
+  )
+}
+
+export default Project

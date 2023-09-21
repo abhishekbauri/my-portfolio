@@ -1,0 +1,30 @@
+.skills{
+    width: 100%;
+    background: 
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+.skills h1{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-underline-offset: 0.6rem;
+    padding: 0.5rem 0; 
+}
+
+.skills-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
