@@ -22,6 +22,7 @@ import {
     taskManagementSystem,
     userManagementSystem,
     weatherStationDashboard,
+    nikePage,
 } from '../assets/index.js';
 
 export const navLinks = [
@@ -94,6 +95,13 @@ export const projectDetails = [
     githubUrl: "https://github.com/abhishekbauri/Cooking_Blog", 
     liveUrl: "https://youtu.be/bITXmoKpllw?si=tVSoQo-5Ul3cJy14",
     id: 6,
+ },
+ {
+   imageUrl: nikePage, 
+   title: "Nike Static Page", 
+   githubUrl: "https://github.com/abhishekbauri/static-landing-page-nike", 
+   liveUrl: "https://nike-static-landing-page.netlify.app/",
+   id: 7,
  }
 ];
 

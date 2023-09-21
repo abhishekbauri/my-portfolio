@@ -18,6 +18,7 @@ import countryFlag from './images/countryFlag.png';
 import taskManagementSystem from './images/taskManagementSystem.png';
 import userManagementSystem from './images/userManagementSystem.png';
 import weatherStationDashboard from './images/weatherStationDashboard.png';
+import nikePage from './images/nikePage.png';
 
 
 export{
@@ -39,4 +40,5 @@ export{
     taskManagementSystem,
     userManagementSystem,
     weatherStationDashboard,
+    nikePage,
 }
