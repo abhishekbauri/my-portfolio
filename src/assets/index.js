@@ -19,6 +19,7 @@ import taskManagementSystem from './images/taskManagementSystem.png';
 import userManagementSystem from './images/userManagementSystem.png';
 import weatherStationDashboard from './images/weatherStationDashboard.png';
 import nikePage from './images/nikePage.png';
+import teeRexStore from './images/teeRexStore.png';
 
 
 export{
@@ -41,4 +42,5 @@ export{
     userManagementSystem,
     weatherStationDashboard,
     nikePage,
+    teeRexStore,
 }

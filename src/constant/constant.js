@@ -23,6 +23,7 @@ import {
     userManagementSystem,
     weatherStationDashboard,
     nikePage,
+    teeRexStore,
 } from '../assets/index.js';
 
 export const navLinks = [
@@ -60,6 +61,13 @@ export const projectDetails = [
     githubUrl: "https://github.com/abhishekbauri/movie-review", 
     liveUrl: "https://movie-reviews-by-akb.netlify.app/" ,
     id: 1,
+ },
+ { 
+   imageUrl: teeRexStore, 
+   title: "TeeRex Store", 
+   githubUrl: "https://github.com/abhishekbauri/Tee_Rex_Store", 
+   liveUrl: "https://akb-teerex-store.netlify.app/" ,
+   id: 1,
  },
  {
     imageUrl: countryFlag, 
