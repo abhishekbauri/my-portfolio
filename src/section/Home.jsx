@@ -1,14 +1,13 @@
-import Button from "@mui/material/Button";
 import { useTypewriter } from "react-simple-typewriter";
 import { photoUrl } from "../constant/constant";
-import { Link } from "react-scroll";
 
 import "./Home.css";
 import Layout from "../component/layout/Layout";
+import Button from "../component/buttons/Button";
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["Frontend", "Software"],
+    words: ["Fullstack", "Frontend", "Backend", "Software"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 80,
@@ -16,33 +15,25 @@ function Home() {
 
   return (
     <Layout>
-      <section className="home" id="home-section">
-        <div className="intro-content">
-          <h3>Hi</h3>
-          <h2>I am Abhishek</h2>
-          <h1>
-            <span> {text} </span> Developer
-          </h1>
-          <Button variant="contained" size="large">
-            <Link
-              to="about-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="navLink"
-            >
-              Know More
-            </Link>
-          </Button>
-        </div>
-
-        <div className="image-container">
-          <div className="photo">
-            <img src={photoUrl} />
+      <div className=" container-fluid ">
+        <div className="row home p-2">
+          <div className="col-md-6 col-sm-12  intro-content d-flex flex-column justify-content-center">
+            <h3 className="text-center">Hi</h3>
+            <h2 className="name-format text-center">I am Abhishek</h2>
+            <h1 className="text-center">
+              <span> {text} </span> Developer
+            </h1>
+            <div className="text-center mt-3">
+              <Button title="Know More!" url="/about" />
+            </div>
+          </div>
+          <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+            <div className="photos">
+              <img src={photoUrl} />
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 }
