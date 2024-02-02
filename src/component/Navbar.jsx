@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navLinks, portfolioLogo } from "../constant/constant";
-import {Link} from 'react-scroll'
+import { NavLink } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -19,25 +19,17 @@ function Navbar() {
     <div className="Nav">
       <nav className="navbar">
         <img src={portfolioLogo} className="logo" />
-       
-        <ul className={` navMenu  ${isActive ? "active" : ""}`}>
+
+        <ul className={` navMenu  `}>
           {navLinks.map((item) => {
             return (
               <li key={item.label} onClick={removeActive}>
-                <Link
-                  to={item.href}
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                  className="navLink"
-                >
+                <NavLink to={item.href} className="nav-link">
                   {item.label}
-                </Link>
+                </NavLink>
               </li>
             );
           })}
-          
         </ul>
 
         <div

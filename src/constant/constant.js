@@ -27,11 +27,11 @@ import {
 } from "../assets/index.js";
 
 export const navLinks = [
-  { href: "home-section", label: "Home" },
-  { href: "about-section", label: "About" },
-  { href: "exp-section", label: "Experience" },
-  { href: "project-section", label: "Projects" },
-  { href: "contact-section", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/experience", label: "Experience" },
+  { href: "/project", label: "Projects" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const photoUrl = photo;
