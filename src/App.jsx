@@ -1,4 +1,3 @@
-import Navbar from "./component/Navbar";
 import About from "./section/About";
 import Home from "./section/Home";
 import Experience from "./section/Experience";
@@ -9,7 +8,6 @@ import { Route, Routes } from "react-router";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
