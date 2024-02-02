@@ -101,7 +101,7 @@ export const projectDetails = [
     imageUrl: cookingBlog,
     title: "Cooking Blog",
     githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
-    liveUrl: "https://youtu.be/bITXmoKpllw?si=tVSoQo-5Ul3cJy14",
+    liveUrl: "https://cooking-blog-akb.vercel.app/",
     id: 6,
   },
   {
