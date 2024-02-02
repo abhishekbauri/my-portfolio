@@ -1,185 +1,183 @@
-.home{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* background design */
-    background-color: #0000ff;
-    background-image: 
-    repeating-linear-gradient(
+.home {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background design */
+  background-color: #0000ff;
+  background-image: repeating-linear-gradient(
       45deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5) 100px,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 100px,
       transparent 0px,
       transparent 200px
     ),
     repeating-linear-gradient(
       -45deg,
-      rgba(0,0,0,0.4),
-      rgba(0,0,0,0.4) 100px,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4) 100px,
       transparent 0px,
       transparent 200px
     );
 }
 
-.intro-content{
-    width: 60%;
-    padding-left: 5rem;
-    color: #fff;
+.intro-content {
+  width: 60%;
+  padding-left: 5rem;
+  color: #fff;
 }
-.intro-content h3{
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    font-weight: lighter;
-}
-
-.intro-content h2{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: lighter;
-}
-.intro-content h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: lighter;
+.intro-content h3 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
 }
 
-.intro-content h1 span{
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+.intro-content h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
 }
 
-.image-container{
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.intro-content h1 span {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
-.image-container .photo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30% 70% 24% 76% / 65% 30% 70% 35% ;
-    box-shadow: -4px 4px 6px #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee9343, #d2e429);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+
+.image-container {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-container .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30% 70% 24% 76% / 65% 30% 70% 35%;
+  box-shadow: -4px 4px 6px #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee9343, #d2e429);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.image-container img{
-    width: 400px;
+.image-container img {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40% 60% 33% 67% / 56% 40% 60% 44%;
+  box-shadow: 2px 2px 4px #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 1.5rem;
+  }
+  .intro-content {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .intro-content h3 {
+    font-size: 3rem;
+  }
+  .intro-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro-content h1 {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .image-container img {
+    width: 85%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 780px) {
+  .home {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 1.5rem;
+  }
+  .intro-content {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .intro-content h3 {
+    font-size: 3rem;
+  }
+  .intro-content h2 {
+    font-size: 3rem;
+  }
+
+  .intro-content h1 {
+    font-size: 3rem;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .image-container img {
+    width: 85%;
     height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40% 60% 33% 67% / 56% 40% 60% 44%  ;
-    box-shadow: 2px 2px 4px #fff;
+  }
 }
 
+@media (min-width: 781px) and (max-width: 1000px) {
+  .intro-content {
+    width: 50%;
+    padding-left: 1rem;
+  }
 
-@media only screen and (max-width: 600px){
-    .home{
-        height: auto;
-        flex-direction: column-reverse;
-        padding-bottom: 1.5rem;
-    }
-    .intro-content{
-        width: 100%;
-        padding-left: 2rem;
-    }
+  .intro-content h3 {
+    font-size: 3rem;
+  }
+  .intro-content h2 {
+    font-size: 2.5rem;
+  }
 
-    .intro-content h3{
-        font-size: 3rem;
-    }
-    .intro-content h2{
-        font-size: 2.5rem;
-    }
+  .intro-content h1 {
+    font-size: 2.2rem;
+  }
 
-    .intro-content h1{
-        font-size: 2rem;
-    }
-
-    .image-container{
-        width: 100%;
-        padding: 0.5rem;
-    }
-
-    .image-container img{
-        width: 85%;
-        height: 300px;
-    }
-}
-
-@media (min-width:600px) and (max-width:780px) {
-    .home{
-        height: auto;
-        flex-direction: column-reverse;
-        padding-bottom: 1.5rem;
-    }
-    .intro-content{
-        width: 100%;
-        padding-left: 2rem;
-    }
-
-    .intro-content h3{
-        font-size: 3rem;
-    }
-    .intro-content h2{
-        font-size: 3rem;
-    }
-
-    .intro-content h1{
-        font-size: 3rem;
-    }
-
-    .image-container{
-        width: 100%;
-        padding: 0.5rem;
-    }
-    .image-container img{
-        width: 85%;
-        height: 350px;
-    }
-}
-
-@media (min-width:781px) and (max-width:1000px){
-    .intro-content{
-        width: 50%;
-        padding-left: 1rem;
-    }
-
-    .intro-content h3{
-        font-size: 3rem;
-    }
-    .intro-content h2{
-        font-size: 2.5rem;
-    }
-
-    .intro-content h1{
-        font-size: 2.2rem;
-    }
-
-    .image-container{
-        width: 50%;
-    }
-    .image-container img{
-        width: 344px;
-        height: 310px;
-    }
+  .image-container {
+    width: 50%;
+  }
+  .image-container img {
+    width: 344px;
+    height: 310px;
+  }
 }

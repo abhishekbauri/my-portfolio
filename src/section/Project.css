@@ -1,40 +1,40 @@
-#project-section{
-   width: 100%;
-   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+#project-section {
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.project-heading{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding-top: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
-    text-underline-offset: 0.6rem;
-    color: #fff;
+.project-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  color: #fff;
 }
 
-.project-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
 }
