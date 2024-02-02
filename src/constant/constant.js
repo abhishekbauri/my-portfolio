@@ -26,14 +26,6 @@ import {
   teeRexStore,
 } from "../assets/index.js";
 
-export const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/experience", label: "Experience" },
-  { href: "/project", label: "Projects" },
-  { href: "/contact", label: "Contact" },
-];
-
 export const photoUrl = photo;
 export const aboutPhotoUrl = aboutPhoto;
 export const companyUrl = kreditBee;
