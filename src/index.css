@@ -68,3 +68,17 @@
 .newBtn:hover {
   color: #ffffff;
 }
+
+/* About css */
+.about {
+  background: linear-gradient(
+    120deg,
+    rgb(198, 195, 194) 48%,
+    rgb(53, 54, 53) 10%
+  );
+}
+
+.photo img {
+  width: 466px;
+  height: 380px;
+}
