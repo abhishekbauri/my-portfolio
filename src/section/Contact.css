@@ -1,7 +1,6 @@
 #contact-section {
   background: linear-gradient(rgb(51, 51, 51), rgb(0, 138, 230));
-  padding-bottom: 1rem;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 #contact-section h1 {
@@ -14,4 +13,154 @@
   text-decoration: underline;
   text-underline-offset: 0.6rem;
   color: #fff;
+}
+
+.contact {
+  min-height: inherit;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 130px 5px 5px 5px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.mail {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #e8760b;
+}
+
+.card2 {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 130px 5px 5px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #191a1a;
+}
+
+.card3 {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 130px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+  fill: #191a1a;
+}
+
+.card4 {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 130px 5px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #1c3df6;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #e8760b;
+}
+
+.card1:hover .mail {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #191a1a;
+}
+
+.card2:hover .github {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #191a1a;
+}
+
+.card3:hover .twitter {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1c3df6;
+}
+
+.card4:hover .linkedin {
+  fill: white;
 }
