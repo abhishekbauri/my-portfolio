@@ -31,44 +31,6 @@
   height: 50px;
 }
 
-/* Button css */
-.newBtn {
-  width: 9em;
-  height: 3em;
-  border-radius: 30em;
-  font-size: 15px;
-  font-family: inherit;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s ease;
-  box-shadow:
-    4px 4px 10px #c5c5c5,
-    -4px -4px 10px #ffffff;
-}
-
-.newBtn::before {
-  content: "";
-  width: 0;
-  height: 3em;
-  border-radius: 30em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #245ce0 0%, #25e0dd 100%);
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-}
-
-.newBtn:hover::before {
-  width: 9em;
-}
-.newBtn:hover {
-  color: #ffffff;
-}
-
 /* About css */
 .about {
   background: linear-gradient(

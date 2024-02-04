@@ -1,29 +1,28 @@
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
-
 import "./Skills.css";
 
 import { skillsImg } from "../constant/constant.js";
+import Layout from "../component/layout/Layout.jsx";
 const Skills = () => {
   return (
-    <section className="skills">
-      <h1>Skills</h1>
-      <div className="skills-container">
-        {skillsImg.map((item) => (
-          <Card sx={{ width: 150, margin: 2 }} key={item.alt}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="150"
-                image={item.src}
-                alt={item.alt}
-              />
-            </CardActionArea>
-          </Card>
-        ))}
+    <Layout>
+      <div
+        className="container-fluid skills d-flex flex-column justify-content-center"
+        style={{ minHeight: "85vh" }}
+      >
+        <h1 className="text-center pt-2  title">My Skills</h1>
+        <div className="row p-4 d-flex justify-content-center align-items-center row-gap-5 gap-4">
+          {skillsImg.map((item, index) => (
+            <img
+              src={item.src}
+              alt={item.alt}
+              key={index}
+              className="img-fluid img-thumbnail"
+              style={{ width: "150px", height: "150px" }}
+            />
+          ))}
+        </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 

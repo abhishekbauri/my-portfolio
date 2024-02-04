@@ -1,9 +1,10 @@
 import { aboutPhotoUrl } from "../constant/constant";
 
 import Layout from "../component/layout/Layout";
-import Skills from "./Skills";
+import { useNavigate } from "react-router";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <Layout>
       <div className="container-fluid">
@@ -44,7 +45,7 @@ const About = () => {
                       style={{ listStyleType: "none" }}
                       className="list-group"
                     >
-                      <li className="list-group-item list-group-item-secondary">
+                      <li className="list-group-item list-group-item-primary">
                         <div className="d-flex gap-4">
                           <h5>National Institute of Technology, Jamshedpur</h5>
                           <h5>2019-2023</h5>
@@ -94,11 +95,40 @@ const About = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed text-capitalize fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    style={{ boxShadow: "none" }}
+                  >
+                    Skills
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <button
+                      className="btn btn-outline-warning"
+                      onClick={() => navigate("/skills")}
+                    >
+                      Check My Skills!
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Skills />
     </Layout>
   );
 };

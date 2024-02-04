@@ -1,5 +1,4 @@
 .skills {
-  width: 100%;
   background: radial-gradient(black 3px, transparent 4px),
     radial-gradient(black 3px, transparent 4px),
     linear-gradient(#fff 4px, transparent 0),
@@ -43,13 +42,4 @@
   text-decoration: underline;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-underline-offset: 0.6rem;
-  padding: 0.5rem 0;
-}
-
-.skills-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }

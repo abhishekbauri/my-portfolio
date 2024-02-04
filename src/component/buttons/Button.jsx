@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import "./../components.css";
 
 /* eslint-disable react/prop-types */
 const Button = ({ title, url }) => {
