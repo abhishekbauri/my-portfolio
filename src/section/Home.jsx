@@ -23,7 +23,7 @@ function Home() {
             <h1 className="text-center">
               <span> {text} </span> Developer
             </h1>
-            <div className="text-center mt-3">
+            <div className="text-center mt-3 mb-3">
               <Button title="Know More!" url="/about" />
             </div>
           </div>

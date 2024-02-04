@@ -1,7 +1,7 @@
 import photo from "../assets/images/photo.png";
 import aboutPhoto from "../assets/images/aboutPhoto.png";
-import kreditBee from "../assets/images/kreditBee.png";
 import logo from "../assets/images/logo.png";
+import contact from "../assets/images/contact.png";
 
 import {
   html,
@@ -28,8 +28,8 @@ import {
 
 export const photoUrl = photo;
 export const aboutPhotoUrl = aboutPhoto;
-export const companyUrl = kreditBee;
 export const portfolioLogo = logo;
+export const contactImage = contact;
 
 export const skillsImg = [
   { src: html, alt: "html-icon" },
