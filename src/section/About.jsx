@@ -69,7 +69,7 @@ const About = () => {
                     aria-controls="collapseTwo"
                     style={{ boxShadow: "none" }}
                   >
-                    Experiene
+                    Experience
                   </button>
                 </h2>
                 <div
