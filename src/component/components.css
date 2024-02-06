@@ -35,3 +35,19 @@
 .newBtn:hover {
   color: #ffffff;
 }
+
+/* labels css */
+.labels {
+  width: fit-content;
+  color: #090909;
+  padding: 4px 6px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: -2px -2px 4px #ffffff;
+}
+.labels:hover {
+  box-shadow: 2px 2px 4px #c5c5c5;
+  /* -2px -2px 4px #ffffff; */
+}

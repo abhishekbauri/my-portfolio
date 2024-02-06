@@ -16,3 +16,16 @@
     background-position: 0% 50%;
   }
 }
+
+.project-card {
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.card-img-top {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border-bottom: 2px solid black;
+}

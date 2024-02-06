@@ -43,3 +43,9 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   text-underline-offset: 0.6rem;
 }
+
+.skills-img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}

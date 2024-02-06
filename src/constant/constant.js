@@ -50,6 +50,7 @@ export const projectDetails = [
   {
     imageUrl: teeRexStore,
     title: "TeeRex Store",
+    techStack: ["React.js", "Redux-Toolkit", "CSS", "Redux-Thunk"],
     githubUrl: "https://github.com/abhishekbauri/Tee_Rex_Store",
     liveUrl: "https://akb-teerex-store.netlify.app/",
     id: 1,
@@ -58,6 +59,7 @@ export const projectDetails = [
   {
     imageUrl: cookingBlog,
     title: "Cooking Blog",
+    techStack: ["Node.js", "Express.js", "Mongo DB", "Bootstrap"],
     githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
     liveUrl: "https://cooking-blog-akb.vercel.app/",
     id: 2,
@@ -65,6 +67,13 @@ export const projectDetails = [
   {
     imageUrl: movieReview,
     title: "Movie Insights",
+    techStack: [
+      "React.js",
+      "Redux-Toolkit",
+      "OMDB API",
+      "Redux-Thunk",
+      "Material UI",
+    ],
     githubUrl: "https://github.com/abhishekbauri/movie-review",
     liveUrl: "https://movie-reviews-by-akb.netlify.app/",
     id: 3,
@@ -72,6 +81,7 @@ export const projectDetails = [
   {
     imageUrl: countryFlag,
     title: "Know Your Country",
+    techStack: ["React.js", "JavaScript", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Country-Flag",
     liveUrl: "https://know-about-your-country.netlify.app/",
     id: 4,
@@ -79,6 +89,7 @@ export const projectDetails = [
   {
     imageUrl: taskManagementSystem,
     title: "Task Management System",
+    techStack: ["React.js", "JavaScript", "Local Storage", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Task-Management-System",
     liveUrl: "https://abhishekbauri.github.io/Task-Management-System/",
     id: 5,
@@ -86,6 +97,7 @@ export const projectDetails = [
   {
     imageUrl: weatherStationDashboard,
     title: "Weather Station Dashboard",
+    techStack: ["React.js", "JavaScript", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Weather-Station-Dashboard",
     liveUrl: "https://weather-station-dashboard.netlify.app/",
     id: 6,
@@ -93,6 +105,7 @@ export const projectDetails = [
   {
     imageUrl: userManagementSystem,
     title: "User Management System",
+    techStack: ["Node.js", "Express.js", "Mongo DB", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/UserManagementSystem",
     liveUrl: "https://youtu.be/adQsAzgKb-o?si=kEbe2mAP2Z6l57nb",
     id: 7,
@@ -101,12 +114,9 @@ export const projectDetails = [
   {
     imageUrl: nikePage,
     title: "Nike Static Page",
+    techStack: ["React.js", "Tailwind CSS", "JavaScript"],
     githubUrl: "https://github.com/abhishekbauri/static-landing-page-nike",
     liveUrl: "https://nike-static-landing-page.netlify.app/",
     id: 8,
   },
 ];
-
-export const aboutDesc = `I am a passionate Software Developer with a strong foundation in Electronics and Communication Engineering graduating from the prestigious college of National Institute of Technology, Jamshedpur. Throughout my professional journey, I have honed my ability to work effectively in fast-paced environments, collaborate with cross-functional teams, and deliver high-quality results within deadlines. I am skilled at problem-solving, analytical thinking, and adapting to new technologies and frameworks.`;
-
-export const kreditBeeExp = `During my internship at KreditBee, I had the opportunity to work as a Frontend Developer, where I honed my expertise in building and maintaining intuitive and user-friendly interfaces. Leveraging my proficiency in React.js, JavaScript and TypeScript, I contributed to the development and maintenance of robust software solutions. Collaborating closely with cross-functional teams, I ensured seamless integration and delivered high-quality products that exceeded client expectations.`;
