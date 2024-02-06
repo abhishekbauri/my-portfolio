@@ -48,60 +48,62 @@ export const skillsImg = [
 
 export const projectDetails = [
   {
-    imageUrl: movieReview,
-    title: "Movie Insights",
-    githubUrl: "https://github.com/abhishekbauri/movie-review",
-    liveUrl: "https://movie-reviews-by-akb.netlify.app/",
-    id: 1,
-  },
-  {
     imageUrl: teeRexStore,
     title: "TeeRex Store",
     githubUrl: "https://github.com/abhishekbauri/Tee_Rex_Store",
     liveUrl: "https://akb-teerex-store.netlify.app/",
     id: 1,
   },
+
+  {
+    imageUrl: cookingBlog,
+    title: "Cooking Blog",
+    githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
+    liveUrl: "https://cooking-blog-akb.vercel.app/",
+    id: 2,
+  },
+  {
+    imageUrl: movieReview,
+    title: "Movie Insights",
+    githubUrl: "https://github.com/abhishekbauri/movie-review",
+    liveUrl: "https://movie-reviews-by-akb.netlify.app/",
+    id: 3,
+  },
   {
     imageUrl: countryFlag,
     title: "Know Your Country",
     githubUrl: "https://github.com/abhishekbauri/Country-Flag",
     liveUrl: "https://know-about-your-country.netlify.app/",
-    id: 2,
+    id: 4,
   },
   {
     imageUrl: taskManagementSystem,
     title: "Task Management System",
     githubUrl: "https://github.com/abhishekbauri/Task-Management-System",
     liveUrl: "https://abhishekbauri.github.io/Task-Management-System/",
-    id: 3,
+    id: 5,
   },
   {
     imageUrl: weatherStationDashboard,
     title: "Weather Station Dashboard",
     githubUrl: "https://github.com/abhishekbauri/Weather-Station-Dashboard",
     liveUrl: "https://weather-station-dashboard.netlify.app/",
-    id: 4,
+    id: 6,
   },
   {
     imageUrl: userManagementSystem,
     title: "User Management System",
     githubUrl: "https://github.com/abhishekbauri/UserManagementSystem",
     liveUrl: "https://youtu.be/adQsAzgKb-o?si=kEbe2mAP2Z6l57nb",
-    id: 5,
+    id: 7,
   },
-  {
-    imageUrl: cookingBlog,
-    title: "Cooking Blog",
-    githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
-    liveUrl: "https://cooking-blog-akb.vercel.app/",
-    id: 6,
-  },
+
   {
     imageUrl: nikePage,
     title: "Nike Static Page",
     githubUrl: "https://github.com/abhishekbauri/static-landing-page-nike",
     liveUrl: "https://nike-static-landing-page.netlify.app/",
-    id: 7,
+    id: 8,
   },
 ];
 

@@ -1,88 +1,51 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { projectDetails } from "../constant/constant";
+import Layout from "../component/layout/Layout";
+import { Link } from "react-router-dom";
 
 import "./Project.css";
-import Layout from "../component/layout/Layout";
 
 const Project = () => {
   return (
     <Layout>
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, ease: "linear" }}
-        viewport={{ once: true }}
-        id="project-section"
-      >
-        <div className="project-heading">
-          <h1>Projects</h1>
-        </div>
-        <div className="project-container">
-          {projectDetails.map((item) => (
-            <Card sx={{ maxWidth: 300, margin: 3 }} key={item.id}>
-              <CardActionArea href={item.liveUrl} target="_blank">
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={item.imageUrl}
-                  alt="green iguana"
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    sx={{
-                      textAlign: "center",
-                      textOverflow: "ellipsis",
-                      overflow: "hidden",
-                      whiteSpace: "nowrap",
-                      height: 30,
-                    }}
+      <div className="container-fluid projects">
+        <div className="row d-flex gap-4 flex-wrap justify-content-center align-items-center row-gap-2">
+          {projectDetails.map((project) => (
+            <div
+              className="card  mt-4 mb-4"
+              key={project.id}
+              style={{ width: "350px" }}
+            >
+              <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="img-fluid img-thumbnail"
+                style={{ height: "200px" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title text-center mb-4">{project.title}</h5>
+                <div className="d-flex justify-content-between">
+                  <Link
+                    to={project.githubUrl}
+                    target="_blank"
+                    className="btn btn-outline-primary text-uppercase"
                   >
-                    {item.title}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+                    <FaGithub size={18} /> Github
+                  </Link>
 
-              <Stack
-                direction="row"
-                sx={{
-                  justifyContent: "space-around",
-                  marginBottom: 2,
-                  marginTop: 2,
-                }}
-              >
-                <Button
-                  variant="outlined"
-                  startIcon={<GitHubIcon />}
-                  href={item.githubUrl}
-                  target="_blank"
-                >
-                  Github
-                </Button>
-                <Button
-                  variant="contained"
-                  endIcon={<OpenInNewIcon />}
-                  href={item.liveUrl}
-                  target="_blank"
-                >
-                  Live
-                </Button>
-              </Stack>
-            </Card>
+                  <Link
+                    to={project.liveUrl}
+                    target="_blank"
+                    className="btn btn-primary text-uppercase"
+                  >
+                    live <FaExternalLinkAlt size={18} />
+                  </Link>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
-      </motion.section>
+      </div>
     </Layout>
   );
 };
