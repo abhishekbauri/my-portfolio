@@ -24,6 +24,7 @@ import {
   weatherStationDashboard,
   nikePage,
   teeRexStore,
+  eShop,
 } from "../assets/index.js";
 
 export const photoUrl = photo;
@@ -48,12 +49,20 @@ export const skillsImg = [
 
 export const projectDetails = [
   {
+    imageUrl: eShop,
+    title: "E-Shop",
+    techStack: ["React.js", "Express.js", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/abhishekbauri/E-Shop",
+    liveUrl: "https://e-shop-by-akb.vercel.app/",
+    id: 9,
+  },
+  {
     imageUrl: teeRexStore,
     title: "TeeRex Store",
     techStack: ["React.js", "Redux-Toolkit", "CSS", "Redux-Thunk"],
     githubUrl: "https://github.com/abhishekbauri/Tee_Rex_Store",
     liveUrl: "https://akb-teerex-store.netlify.app/",
-    id: 1,
+    id: 8,
   },
 
   {
@@ -62,7 +71,7 @@ export const projectDetails = [
     techStack: ["Node.js", "Express.js", "Mongo DB", "Bootstrap"],
     githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
     liveUrl: "https://cooking-blog-akb.vercel.app/",
-    id: 2,
+    id: 7,
   },
   {
     imageUrl: movieReview,
@@ -76,7 +85,7 @@ export const projectDetails = [
     ],
     githubUrl: "https://github.com/abhishekbauri/movie-review",
     liveUrl: "https://movie-reviews-by-akb.netlify.app/",
-    id: 3,
+    id: 6,
   },
   {
     imageUrl: countryFlag,
@@ -84,7 +93,7 @@ export const projectDetails = [
     techStack: ["React.js", "JavaScript", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Country-Flag",
     liveUrl: "https://know-about-your-country.netlify.app/",
-    id: 4,
+    id: 5,
   },
   {
     imageUrl: taskManagementSystem,
@@ -92,7 +101,7 @@ export const projectDetails = [
     techStack: ["React.js", "JavaScript", "Local Storage", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Task-Management-System",
     liveUrl: "https://abhishekbauri.github.io/Task-Management-System/",
-    id: 5,
+    id: 4,
   },
   {
     imageUrl: weatherStationDashboard,
@@ -100,7 +109,7 @@ export const projectDetails = [
     techStack: ["React.js", "JavaScript", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Weather-Station-Dashboard",
     liveUrl: "https://weather-station-dashboard.netlify.app/",
-    id: 6,
+    id: 3,
   },
   {
     imageUrl: userManagementSystem,
@@ -108,7 +117,7 @@ export const projectDetails = [
     techStack: ["Node.js", "Express.js", "Mongo DB", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/UserManagementSystem",
     liveUrl: "https://youtu.be/adQsAzgKb-o?si=kEbe2mAP2Z6l57nb",
-    id: 7,
+    id: 2,
   },
 
   {
@@ -117,6 +126,6 @@ export const projectDetails = [
     techStack: ["React.js", "Tailwind CSS", "JavaScript"],
     githubUrl: "https://github.com/abhishekbauri/static-landing-page-nike",
     liveUrl: "https://nike-static-landing-page.netlify.app/",
-    id: 8,
+    id: 1,
   },
 ];
