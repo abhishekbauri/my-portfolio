@@ -83,7 +83,7 @@ const About = () => {
                       className="list-group"
                     >
                       <li className="list-group-item list-group-item-info">
-                        <h5>SDE Intern at Desi QnA</h5>
+                        <h5>SDE Intern at ITJOBXS</h5>
                         <p>Nov 2023 - Currrent</p>
                       </li>
                       <hr />
