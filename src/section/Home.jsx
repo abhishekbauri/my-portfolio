@@ -1,6 +1,6 @@
 import { useTypewriter } from "react-simple-typewriter";
 import { photoUrl } from "../constant/constant";
-
+import { MdDownload } from "react-icons/md";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -31,6 +31,14 @@ function Home() {
             </h1>
             <div className="text-center mt-3 mb-3">
               <Button title="Know More!" url="/about" />
+              <Link
+                to="https://drive.google.com/file/d/1wtI15BMJIKNU6DVv3gsH75XDkwxfAiRY/view?usp=sharing"
+                target="_blank"
+                className="btn btn-warning ms-2 pt-2 pb-2 rounded-5"
+              >
+                Download Resume
+                <MdDownload size={20} />
+              </Link>
             </div>
           </div>
           <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">

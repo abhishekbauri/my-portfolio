@@ -25,6 +25,7 @@ import {
   nikePage,
   teeRexStore,
   eShop,
+  expenseTracker,
 } from "../assets/index.js";
 
 export const photoUrl = photo;
@@ -54,7 +55,7 @@ export const projectDetails = [
     techStack: ["React.js", "Express.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/abhishekbauri/E-Shop",
     liveUrl: "https://e-shop-by-akb.vercel.app/",
-    id: 9,
+    id: 10,
   },
   {
     imageUrl: teeRexStore,
@@ -62,7 +63,7 @@ export const projectDetails = [
     techStack: ["React.js", "Redux-Toolkit", "CSS", "Redux-Thunk"],
     githubUrl: "https://github.com/abhishekbauri/Tee_Rex_Store",
     liveUrl: "https://akb-teerex-store.netlify.app/",
-    id: 8,
+    id: 9,
   },
 
   {
@@ -71,7 +72,7 @@ export const projectDetails = [
     techStack: ["Node.js", "Express.js", "Mongo DB", "Bootstrap"],
     githubUrl: "https://github.com/abhishekbauri/Cooking_Blog",
     liveUrl: "https://cooking-blog-akb.vercel.app/",
-    id: 7,
+    id: 8,
   },
   {
     imageUrl: movieReview,
@@ -85,7 +86,7 @@ export const projectDetails = [
     ],
     githubUrl: "https://github.com/abhishekbauri/movie-review",
     liveUrl: "https://movie-reviews-by-akb.netlify.app/",
-    id: 6,
+    id: 7,
   },
   {
     imageUrl: countryFlag,
@@ -93,7 +94,7 @@ export const projectDetails = [
     techStack: ["React.js", "JavaScript", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Country-Flag",
     liveUrl: "https://know-about-your-country.netlify.app/",
-    id: 5,
+    id: 6,
   },
   {
     imageUrl: taskManagementSystem,
@@ -101,6 +102,14 @@ export const projectDetails = [
     techStack: ["React.js", "JavaScript", "Local Storage", "CSS"],
     githubUrl: "https://github.com/abhishekbauri/Task-Management-System",
     liveUrl: "https://abhishekbauri.github.io/Task-Management-System/",
+    id: 5,
+  },
+  {
+    imageUrl: expenseTracker,
+    title: "Expense Tracker",
+    techStack: ["React.js", "JavaScript", "CSS"],
+    githubUrl: "https://github.com/abhishekbauri/Expense-tracker",
+    liveUrl: "https://expense-tracker-by-akb.netlify.app/",
     id: 4,
   },
   {
