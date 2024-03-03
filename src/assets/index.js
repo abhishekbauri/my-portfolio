@@ -21,6 +21,7 @@ import weatherStationDashboard from "./images/weatherStationDashboard.png";
 import nikePage from "./images/nikePage.png";
 import teeRexStore from "./images/teeRexStore.png";
 import eShop from "./images/eShop.png";
+import expenseTracker from "./images/expenseTracker.png";
 
 export {
   html,
@@ -44,4 +45,5 @@ export {
   nikePage,
   teeRexStore,
   eShop,
+  expenseTracker,
 };
