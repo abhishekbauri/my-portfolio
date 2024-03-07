@@ -17,11 +17,11 @@ import movieReview from "./images/movieReview.png";
 import countryFlag from "./images/countryFlag.png";
 import taskManagementSystem from "./images/taskManagementSystem.png";
 import userManagementSystem from "./images/userManagementSystem.png";
-import weatherStationDashboard from "./images/weatherStationDashboard.png";
 import nikePage from "./images/nikePage.png";
 import teeRexStore from "./images/teeRexStore.png";
 import eShop from "./images/eShop.png";
 import expenseTracker from "./images/expenseTracker.png";
+import weatherApplication from "./images/weatherApplication.png";
 
 export {
   html,
@@ -41,7 +41,7 @@ export {
   countryFlag,
   taskManagementSystem,
   userManagementSystem,
-  weatherStationDashboard,
+  weatherApplication,
   nikePage,
   teeRexStore,
   eShop,
